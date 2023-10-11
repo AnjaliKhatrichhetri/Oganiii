@@ -1,0 +1,502 @@
+*{
+    padding:0px;
+    margin: 0px;
+   
+    /* background-image: url(/resource/busimage.jpg) no-repeat fixed center; */
+
+
+}
+
+.navv{
+    height:80px;
+    width:100%;
+    background-color:#f4f5f8; 
+    opacity: 0.9;
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap:70px;
+    position:fixed;
+    /* border-bottom: 1px rgb(145, 141, 141) solid; */
+    z-index: 2;
+}
+.login,.signup{
+    height:40px;
+    width:110px;
+    border-radius: 10px;
+    font-size: medium;
+    color:white;
+}
+.buttons{
+    display:flex ;
+    flex-direction: row-reverse;
+    padding-left: 20rem;
+    gap:20px;
+}
+.login{
+    background-color:rgb(13, 37, 86);
+}
+.signup{
+    background-color: rgb(101, 176, 101);
+}
+
+.logo{
+    height:46px;
+    width:46px;
+    padding-left: 26rem;
+    /* background-image: url(/resource/logo.jpg); */
+    /* background-image: none; */
+    /* background-color: red; */
+    /* background-blend-mode: multiply; */
+
+    background-size: contain; 
+    position:absolute;
+    left:90px;
+}
+.link{
+    font-size: 16px;
+    font-weight: 700;
+    font-family:sans-serif;
+    color:rgb(33, 24, 24);
+    
+}
+.link:hover{
+    cursor:pointer;
+    text-decoration: none;
+    transform: scale(1.1,1);
+    transition:ease-in-out;
+}
+.homeimg{
+    z-index: -1;
+    display:flex;
+
+    height:600px;
+    width:100%;
+    /* background-image:cover;
+    background-repeat: no-repeat; */
+    /* background-size: contain; */
+}
+.home{
+    height:700px;
+    width:100%;
+    /* background-image:cover;
+    background-repeat: no-repeat; */
+    /* background-image: url(/resource/pngwing.com\(27\).png); */
+    /* background-size: cover; */
+  
+    
+    
+}
+a{
+    color:rgb(196, 190, 190);
+    text-decoration: none;
+}
+.home-text{
+    font-size: 5rem;
+    position: absolute;
+    top:160px;
+    /* shadow: 1px 2px 5px gray; */
+    left: 30%;
+    color:rgb(12, 10, 10);
+    opacity:1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    position: relative;
+    width:100%;
+   
+   
+}
+.userform{
+    background-color: blanchedalmond;
+}
+.container>.form{
+    position: absolute;
+    top: 500px;
+  
+}
+
+.form{
+    width:70%;
+    justify-content: center;
+    align-items: center;
+  
+
+ 
+    
+}
+form{
+    
+    background-image:url(./resource/map.jpg) ;
+    background-color:oldlace;
+    box-shadow: 5px 2px 9px rgb(213, 204, 204);
+  
+}
+.innerform{
+    height:300px;
+    box-shadow: 5px 2px 9px rgb(213, 204, 204);
+    background-color:oldlace;
+  
+   
+}
+input,field{
+ 
+      box-shadow: 2px 3px 5px grey;
+     height:32px;
+    outline: none;
+}
+  
+ 
+
+.form_txt{
+    height:60px;
+    width:80%;
+    /* background-color: crimson; */
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction:column;
+    margin-left: 73px;
+}
+.ticketcontent{
+    color:#1E1C26;
+}
+.line{
+    height:2px;
+    width:100%;
+    background-color: rgb(96, 88, 88); 
+    /* margin-left: 80px; */
+    /* padding-top:2px; */
+}
+.txt{
+font:bold;
+color:rgb(18, 16, 16);
+margin-left: 80px;
+margin-bottom:2px;
+}
+.innerform{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.one{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center ;
+     gap:40px; 
+     margin-top: 28px;
+}
+.lbl{
+display:flex;
+font-size: 19px;
+font-family: sans-serif;
+color:rgb(4, 4, 4);
+}
+.label{
+    font-size: 17px;
+    font-family: sans-serif;
+    color:rgb(20, 13, 13);
+    
+
+}
+.one>onea{
+padding-left:20px;
+}
+.one>oneb{
+    padding-left:30px;    
+}
+.btn{
+    height:34px;
+    width:110px;
+
+    border-radius: 20px;
+    box-shadow: 4px 3px 4px gray;
+    background-color:  rgb(146, 146, 248);
+    color:white;
+}
+/* button:hover{
+ 
+   
+    
+} */
+  .last{
+    display:flex;
+     margin-top:25px; 
+    margin-bottom: 5px;
+    flex-direction: row;
+    gap:30px;
+   
+} 
+
+.form{
+    height:150px;
+    width:70%;
+  margin-left: 240px;
+ 
+
+}
+.dest{
+    height:40px;
+    width:full;
+    background-color:red;
+}
+
+.location{
+    height:100px;
+    width:full;
+    background-color: plum;
+}
+p{
+    color:gray;
+}
+.user_location{
+    display:flex;
+    flex-direction: row;
+}
+
+.features{
+    height:600px;
+    width:85%;
+    display:flex;
+    flex-direction:column;
+    margin-left: 100px;
+    margin-top:210px;
+    /* background-color: orange; */
+}
+.features_title{
+    background-color: pink; 
+    padding-bottom: 28px;
+ 
+}
+.buses{
+    display:grid;
+ grid-template-columns:auto auto auto;
+
+    /* background-color: darkcyan; */
+    height:500px;
+
+}
+
+.busA,.busB,.busC{
+    /* background-color: cornflowerblue; */
+    width:300px;
+   margin-left:25px;
+   border:1px solid rgb(73, 72, 72);
+   gap:25px; 
+}
+.busA:hover{
+    background-color:rgb(233, 203, 203);
+border:none;
+transform:scale(1.1,1.1);
+}
+.busB:hover{
+    background-color:rgb(233, 203, 203);
+    border:none;
+    transform:scale(1.1,1.1);
+}
+.busC:hover{
+    background-color:rgb(233, 203, 203);
+    border:none;
+    transform:scale(1.1,1.1);  
+}
+
+.busimg1,.busimg2,.busimg3{
+ 
+    height:200px;
+    width:300px;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.busimg1{
+    background-image: url(./resource/pexels-timcompound-3608967-removebg-preview.png);
+
+}
+.busimg2{
+    background-image: url(./resource/coachbus.png);
+}
+.busimg3{
+background-image: url(./resource/pngwing.com\(25\).png);
+}
+
+
+
+
+h1{
+    font-size:small;
+}
+
+.busdetail{
+    padding-left: 12px;
+}
+
+.whyus{
+    height:400px;
+    width:80%;
+    margin-top:10rem;
+    display: flex;
+    flex-direction: column;
+margin-left: 125px;
+    background-color: #1299C6;
+
+}
+.whyus_txt{
+    height:200px;
+    width:80%;
+    padding-top:20px;
+    margin-left: 120px;;
+    /* background-color: red; */
+    display:flex;
+    flex-direction:column ;
+    justify-content:center;
+    align-items: center;
+    
+}
+.whyus_img{
+    height:130px;
+    width:90%;
+    padding-left: 120px;
+    display:flex;
+ padding-top:40px;
+    flex-direction: row;
+    gap:110px;
+    /* background-color: aqua; */
+
+}
+.whyus_img1,.whyus_img2,.whyus_img3,.whyus_img4,.whyus_img5{
+    height:90px;
+    width:90px;
+    display:flex;
+ flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:90px;
+    border:1px solid white;
+    
+}
+
+
+
+.footer{
+    height:280px;
+    background-color: #1E1C26;
+    display: flex;
+    margin-top:10px;
+    flex-direction: column;
+    
+}
+
+.topfooter{
+    display:flex;
+    width:80%;
+    
+    align-items: center;
+    gap:20px; 
+    padding-top:12px;
+   margin-left: 160px;
+    flex-direction: row;
+    justify-items: center;
+}
+.topfooterA,.topfooterB,.topfooterC,.topfooterD,.topfooterE{
+    padding-left: 30px;
+}
+i{
+    height:20px;
+    width:50px;
+}
+b{
+    font-size: large;
+    color:white;
+}
+p{
+    color:aliceblue;
+    font-size:medium;
+}
+.middlefooter{
+
+    height:80px;
+    width:80%;
+    gap:40px;
+    margin-left: 160px;
+    padding-top: 20px;
+    padding-left: 80px;
+   
+}
+.esewa,.khalti,.phonepay,.imepay{
+    height:30px;
+    width:60px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.esewa{
+    background-image: url(./resource/Screenshot\ 2023-06-25\ at\ 18-38-20\ esewa\ -\ Google\ Search.png);
+
+}
+.khalti{
+    background-image:url(./resource/Screenshot\ 2023-06-25\ at\ 18-38-53\ khalti\ -\ Google\ Search.png);
+}
+.phonepay{
+    background-image:url(./resource/Screenshot\ 2023-06-25\ at\ 18-39-23\ phonepay\ -\ Google\ Search.png);
+
+}
+.imepay{
+    background-image:url(./resource/Screenshot\ 2023-06-25\ at\ 18-39-49\ imepay\ -\ Google\ Search.png) ;
+}
+
+.bottomfooter{
+
+    width:80%; 
+    margin-left: 160px;
+    display:flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    flex-direction: row;
+}
+.activeticket{
+    margin-top:20rem;
+   
+    height:600px;
+    margin-left: 13rem;
+    width:80%;
+}
+.activetxt{
+    height:6rem;
+    padding-top: 1rem;
+    width:full;
+    display:flex;
+    justify-content: space-between; 
+    flex-direction:row;
+    /* background-color: red; */
+}
+.AT{
+    font-size: x-large;
+}
+.SA{
+    font-size: medium;
+    color:rgb(38, 93, 157);
+}
+tr:hover{
+    transform: scale(1,1);
+    box-shadow:2px 3px 5px gray ;
+}
+.seatpreferences{
+    height:500px;
+    width:80%;
+    display:flex;
+    flex-direction:row;
+    background-color: red;
+    
+}
+.busmap{
+    width:50%;
+    background-color: paleturquoise;
+}
+.seats{
+    width:50%;
+    background-color: pink;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css"/>
+
+</head>
+<body>
+    <div class="message" id="msg">
+        <div class="tq">Thank You for submitting .</div>
+        <div class="bb"><button class="ok" onclick="Cancel()" >ok</button></div>
+        </div>
+        
+        
+        
+        <div class="main">
+              <a class="link" href="https://www.google.com/">Have an account?</a>
+            <div>
+              <input onclick="Name(a)" id="nm"
+               class="uname" 
+               placeholder="Username or Password"  /> 
+              <p  class="err"id="nmerror"></p>
+        
+            </div>
+           <div>
+            <input id="pw" class="pword" 
+            type="password" placeholder="Password" />
+            <p  class="err" id="pwerror"></p>
+           </div>
+        
+           <div>
+            <button class="signin" id="signin" onclick="signin()">SIGN IN</button>
+        </div>
+        <!-- progress bar -->
+        <div>
+            <div class="bar" id="bar" div>
+        </div>
+        
+        
+        
+            <div class="option">
+                <div class="optiona">
+                    <input type="checkbox" class="tickbox"><label class="rm">Remember Me</label>
+                </div>
+                <div class="optionb">
+                    <a class="fp" href="https://www.google.com/">Forgot password?</a>
+                </div>
+            
+           </div>
+        
+        <div class="weblinks">
+            <div class="title">
+                -Or Sign in With-
+            </div>
+        <div class="last">
+            <div class="facebook"><a class="aa" href="https://www.google.com/">Facebook</a></div>
+            <div class="twitter"><a  class="aa" href="https://twitter.com/">Twitter</a></div>
+        </div>
+        </div>
+        
+        
+        </div>
+        <script src="./login.js"></script>
+</body>
+</html>

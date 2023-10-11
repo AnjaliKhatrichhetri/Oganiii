@@ -1,0 +1,233 @@
+body{
+  
+    background-image:url(../resource/pic.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* filter: brightness(1.3) blur(2px) contrast(2); */
+    /* filter: brightness(1.4) blur(3px) contrast(1.1); */
+    /* box-shadow: inset 0 0 0 1px black; */
+
+}
+.main{
+    height:380px;
+    width:40%;
+     /* background-color: slategrey;/  */
+    opacity:1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-left:350px ; */
+    margin-top:100px; ;
+    gap:20px;
+}
+.message{
+    height:100px;
+    width:300px;
+    background-color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black ;
+    position:absolute;
+    /* margin-left:450px; */
+ transform:translateY(-350%); 
+    transition:20s;
+    display:none;
+}
+
+.tq{
+    height:600px;
+    width:300px;
+    /* background-color: crimson; */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bb{
+    height:40px;
+    width:260px;
+    display:flex;
+    flex-direction: row-reverse;
+    
+    /* background-color: yellow; */
+}
+.ok{
+    height:30px;
+    width:50px;
+    font-size: 17px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(108, 108, 247);
+    border:none;
+    border-radius:4px;
+}
+a{
+    text-decoration: none;
+}
+.link{
+    color:white;
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+.link:hover{
+    color:peachpuff;
+}
+
+.pword,.uname{
+    height:40px;
+    width:300px;
+     color:white; 
+     border-top:0.2px solid white;
+     border-bottom: 0.2px solid white;
+    padding:3px;
+     
+}
+un:hover{
+    border:2px solid white;
+}
+input:hover{
+    border:1px solid white;
+}
+input{
+    border: none;
+  
+    /* border-top: 1px solid transparent; */
+    /* border-bottom:1px solid transparent; */
+    /* background:transparent;   */
+    background-color:rgba(255, 255, 255, 0.233);
+    outline-width: 0;
+      border-radius: 20px;  
+    /* opacity:-0.9px; */
+color:white;  
+/* border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+}
+.signin{
+    height:40px;
+    width:300px;
+    border-radius: 20px;
+    border:none;
+    background-color: peachpuff;
+    /* color */
+}
+.bar{
+
+    height:10px;
+    width:0px;
+    border-radius:20px ;
+    background-color: rgb(175, 175, 240);
+    transition:ease-in-out;
+    transition-duration: 5s;
+}
+.option{
+    height:40px;
+    width:300px;
+    /* background-color: salmon; */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.optiona{
+    height:30px;
+    width:150px;
+}
+.optionb{
+    height:30px;
+    width:150px;
+    display:flex;
+    flex-direction: row-reverse;
+}
+::placeholder{
+    padding:20px;
+    color:white;
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rm,.fp{
+    color:white;
+} 
+a{
+    color:BLACK;
+
+}
+.title{
+    color:white;
+}
+.weblinks{
+    height:80px;
+    width:300px;
+    gap:10px;
+     /* background-color: pink;  */
+}
+.title{
+    height:30px;
+    width:300px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+    /* gap:2px; */
+}
+.last{
+    height:40px;
+    width:300px;
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+    
+    /* background-color: red; */
+}
+.facebook,.twitter{
+height:40px;
+width:140px;
+background-color:white;
+display:flex;
+justify-content: center;
+align-items: center;
+border-radius:4px ;
+/* color:white; */
+}
+.twitter:hover,.facebook:hover{
+  background-color:peachpuff;
+
+}
+.aa:hover{
+    color:white;
+}
+
+button:hover{
+    transform:scale(0.9) ;
+    transition: ease-in-out;
+    /* transition-duration: 1s; */
+}
+
+  
+ 
+  
+  .un .placeholder {
+    
+    transition: 
+      top 0.3s ease,
+      color 0.3s ease,
+      font-size 0.3s ease;
+  }
+  
+  .err{
+    color:red;
+    padding:0px;
+    margin:0px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }

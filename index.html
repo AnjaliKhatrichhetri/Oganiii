@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="junkiri.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    
+</head>
+<body>
+   <nav class="navv">
+    <div class="logo"></div>
+ 
+    <a href="./index.html" class="link">Home</a>
+    <a class="link">About Me</a>
+    <a class="link" href="./ticketpolicy.html">Ticket Policy</a>
+    <a class="link" href="./schedule.html">Bus Schedule</a>
+   <div class="buttons">
+    <a href="./login/login.html"><button class="login">login</button></a> 
+    <a href="./signup/signup.html"> <button class="signup">sign up</button></div></a>
+   
+   
+   </nav>
+
+<div class="home">
+ 
+
+   <div class="container" >
+    <img class="homeimg" src="./resource/pngwing.com(27).png" alt="">
+    <p class="home-text">
+    <br>  The joy of travel,<br>
+       just a few clicks away. </p>
+    <form class="form ">
+     <div class="form_txt ">
+      <span></span>
+       <span class="txt">Book Your Bus Here</span>
+       <p class="line"></p>
+
+       </div>
+       
+    <div class="innerform">
+     <div class="one onea">
+
+        <span style=" display:flex; flex-direction: column;">
+
+            <label>From:</label>
+              <select class="selectpicker">
+                <option selected hidden disabled>KATHMANDU</option>
+                <option>POKHARA</option>
+                <option class="special">MUGLING</option>
+                <option class="special">BUTWAL</option>
+                <option class="special">CHITWAN</option>
+                <option class="special">NEPALGUNJ</option>
+                <option class="special">BARATPUR</option>
+                <option class="special">NARANGADH</option>
+              
+              
+              
+              
+              </select>
+          </span>
+
+    <span style=" display:flex; flex-direction: column;">
+
+        <label>To:</label>
+          <select class="selectpicker">
+            <option selected hidden disabled>KATHMANDU</option>
+            <option>POKHARA</option>
+            <option class="special">MUGLING</option>
+            <option class="special">BUTWAL</option>
+            <option class="special">CHITWAN</option>
+            <option class="special">NEPALGUNJ</option>
+            <option class="special">BARATPUR</option>
+            <option class="special">NARANGADH</option>
+            <option class="special">BUTWAL</option>
+            <option class="special">BUTWAL</option>
+          
+          
+          
+          </select>
+      </span>
+      <span class="debt">
+          <label class="lbl" style="font-size:14px;color:#333333;">Departure Time:</label>
+          <input class="field" type="datetime-local"/>
+      </span>
+
+     </div>
+
+     <div class="one oneb">
+        <span style=" display:flex; flex-direction: column;">
+
+            <label>Seating Option:</label>
+              <select class="selectpicker">
+                <option selected hidden disabled>Male</option>
+                <option>Female</option>
+                <option class="special">Child</option>
+              
+              </select>
+          </span>
+        <span>
+            <span style=" display:flex; flex-direction: column;">
+
+                <label>Seating Option:</label>
+                  <select class="selectpicker">
+                    <option selected hidden disabled>Disabled Seat</option>
+                    <option>Passenger Seat</option>
+                    <option class="special">Window Seat</option>
+                  
+                  </select>
+              </span>
+        </span>
+        <span style=" display:flex; flex-direction: column;">
+
+          <label>Bus Type:</label>
+            <select class="selectpicker">
+              <option>Minivan</option>
+              <option>Macro</option>
+              <option class="special">Single Deck Bus</option>
+              <option style=" color: #fff;">Double Deck Bus</option>
+            </select>
+        </span>
+       
+             </div>
+
+             <div class="last">
+                <span>
+                   <button class="btn">Reserve</button>
+                </span>
+                <span>
+                  <button class="btn">Cancel</button>
+
+                <span>
+                    
+                
+                </span>
+                     </div>
+   </div>
+    </form> 
+  </div>
+  </div>
+
+  <div class="" style="background-color: #EEEEEE;">
+    <div class="activeticket">
+      <div class="activetxt" ><div class="AT">Active Ticket</div> <div class="SA">see all</div></div>  
+       <div class="">
+        <table>
+          <thead style="height:5rem; display: flex; padding:1rem; background-color: #E6E6E6; ;">
+             <th style=" font-weight: 100; font-family:Arial, Helvetica, sans-serif; padding-left:5rem">Operator</th>
+             <th style=" font-weight: 100; font-family:Arial, Helvetica, sans-serif; padding-left:10rem;">Departure <i class="fa fa-arrow-down" style="color:gray"></i></th>
+             <th style=" font-weight: 100; font-family:Arial, Helvetica, sans-serif;  padding-left:6rem; color:blue;">Total Duration <i class="fa fa-arrow-up" ></i></th>
+             <th style=" font-weight: 100; font-family:Arial, Helvetica, sans-serif; padding-left: 9rem;">Arrival <i class="fa fa-arrow-up" style="color:gray" ></i></th>
+             <th style=" font-weight: 100; font-family:Arial, Helvetica, sans-serif; padding-left: 7rem;">Price <i class="fa fa-arrow-up"style="color:gray" ></i></th>
+             <th style=" font-weight: 100; font-family:Arial, Helvetica, sans-serif; padding-left: 7rem;">Select Seats</th>
+          </thead>
+          <tbody>
+      <tr style="display:flex;padding-top:2rem; margin-top:2rem; margin-bottom: 2rem; background-color:white; border-radius: 1rem ; flex-direction:row; padding-left: 5rem;" >
+    <td style="display:flex; flex-direction: column;"><p style="color:black;">Sajha YataYat</p><p style="color:#02CB66; font-size:small;">A-C Seater-Sleeper(2+1)</p></td>
+    <td style="display:flex; flex-direction: column; padding-left: 6rem;"><p  style="color:gray;" >8:00 am</p><button style="background-color: #F04747; color:white; border:none; border-radius:4px; height:3rem; width:7rem; border-radius: 1rem; font-size: small;">Next Day</button></td>
+    <td style="display:flex; flex-direction: column; padding-left:10rem;"><p style="color:#D2D2D2">--6h 40m--</p><p style="font-size: small; color:#3C80D8;">Boarding/Dropping Points</p></td>  
+    <td style="display:flex; flex-direction: column; padding-left:9rem;"><p style="font-weight: 700; color:gray;">06:45</p></td>
+    <td style="display:flex; flex-direction: column; padding-left:11rem;"><p style="font-size:large;font-weight:800 ; color:rgb(28, 20, 20);">RS 1500</p><p style="color:#C3C3C3;font-size: small;">40 Seats Left</p></td> 
+    <td style="display:flex; flex-direction: column; padding-left:9rem;  margin-right:1rem;"><button style=" background-color:#EA2331;border:none; border-radius:4px; height:3rem;color:white;">Select Seat</button><p style="color:#C3C3C3;font-size:small; padding-top: 3px;">Cancellation Policy</p></td>
+    </tr>
+    <tr style="display:flex;padding-top:2rem; margin-top:2rem; margin-bottom: 2rem; background-color:white; border-radius: 1rem ; flex-direction:row; padding-left: 5rem;" >
+      <td style="display:flex; flex-direction: column;"><p style="color:black;">Dhaulagiri YataYat</p><p style="color:#02CB66; font-size:small;">A-C,Sleeper,Deluxe</p></td>
+      <td style="display:flex; flex-direction: column; padding-left: 6rem;"><p  style="color:gray;" >9:00 am</p><button style="background-color: #F04747; color:white; border:none; border-radius:4px; height:3rem; width:7rem; border-radius: 1rem; font-size: small;">Next Day</button></td>
+      <td style="display:flex; flex-direction: column; padding-left:10rem;"><p style="color:#D2D2D2">--6h 00m--</p><p style="font-size: small; color:#3C80D8;">Boarding/Dropping Points</p></td>  
+      <td style="display:flex; flex-direction: column; padding-left:9rem;"><p style="font-weight: 700; color:gray;">06:45</p></td>
+      <td style="display:flex; flex-direction: column; padding-left:11rem;"><p style="font-size:large;font-weight:800 ; color:rgb(28, 20, 20);">RS 1,200</p><p style="color:#C3C3C3;font-size: small;">19 Seats Left</p></td> 
+      <td style="display:flex; flex-direction: column; padding-left:9rem;  margin-right:1rem;"><button style=" background-color:#EA2331;border:none; border-radius:4px; height:3rem;color:white;">Select Seat</button><p style="color:#C3C3C3;font-size:small; padding-top: 3px;">Cancellation Policy</p></td>
+      </tr>
+      <tr style="display:flex;padding-top:2rem; margin-top:2rem; margin-bottom: 2rem; background-color:white; border-radius: 1rem ; flex-direction:row; padding-left: 5rem;" >
+        <td style="display:flex; flex-direction: column;"><p style="color:black;">Suva Travels</p><p style="color:#02CB66; font-size:small;">VOLVO AC Multi Axle Sleeper</p></td>
+        <td style="display:flex; flex-direction: column; padding-left: 3rem;"><p  style="color:gray; " >8:30 am</p></td>
+        <td style="display:flex; flex-direction: column; padding-left:10rem;"><p style="color:#D2D2D2">--10h 40m--</p><p style="font-size: small; color:#3C80D8;">Boarding/Dropping Points</p></td>  
+        <td style="display:flex; flex-direction: column; padding-left:9rem;"><p style="font-weight: 700; color:gray;">01:20</p></td>
+        <td style="display:flex; flex-direction: column; padding-left:11rem;"><p style="font-size:large;font-weight:800 ; color:rgb(28, 20, 20);">RS 2,600</p><p style="color:#C3C3C3;font-size: small;">16 Seats Left</p></td> 
+        <td style="display:flex; flex-direction: column; padding-left:9rem;  margin-right:1rem;"><button id='selectseat' style=" background-color:#EA2331;border:none; border-radius:4px; height:3rem;color:white;">Select Seat</button><p style="color:#C3C3C3;font-size:small; padding-top: 3px;">Cancellation Policy</p></td>
+        </tr>
+
+ 
+          </tbody>
+        </table>
+       </div>
+    
+      </div>
+  </div>
+ 
+  <!-- <div class="seatpreferences" style="margin-left: 10rem;;">
+    <div class="busmap"></div>
+    <div class="seats">
+      <div class="title" style="display:flex; gap:3rem; padding:2rem; background-color:#F2F2F2 ; text-decoration:none;">
+        <span style="font-size:large" >Kathmandu-Pokhara</span>
+        <span style="font-size:large">Boarding Points</span>
+        <span style="font-size:large" href="">Dropping Points</span>
+      </div>
+      <div class="kathmanducontent" style="padding-left:3rem; display:flex; gap:1rem; flex-direction: column;">
+        <h1 style="font-size: medium;">Sajha Yatayat</h1>
+        <h>A-C Seater Sleeper(1+2)</h>
+      <div class="">
+        <span><label for="">Date:</label><input type="date" placeholder="Fri,30 Jun 2023"/></span>
+        <span><label for="">Time:</label><input type="time" placeholder="9:00 Pm -01:00 AM"></span>
+      </div>
+      <div class="" style="display:flex; flex-direction: column;">
+       <label for="">Select Boarding Point</label>
+       <select style="height:3rem; padding:2rem; width:28rem; background: transparent;  border-bottom:2px gray;">
+        <option>chowk</option>
+        <option>chowk</option>
+
+       </select>
+      </div>
+      <div style="display:flex; flex-direction: column; padding-top:2rem;">
+        <label for="">Select Dropping Point</label>
+        <select  style="height:3rem; padding:2rem; width:28rem; background: transparent;  border-bottom:2px gray;">
+          <option value="">chowk</option>
+          <option value="">chowk</option>
+          <option value="">chowk</option>
+
+        </select>
+      </div>
+      <button style="margin-top:2rem; height:4rem; width:15rem;">Confirm Seats</button>
+      </div>
+
+     
+    </div>
+  </div> -->
+
+<div class="features">
+    <div class="feature_title" style="font-size:xx-large; margin-bottom: 4rem;">Our <br>
+        Bus Features
+    </div>
+    <div class="buses">
+        <div class="busA">
+            <div class="busimg1"></div>
+            <div class="busdetail">
+                <p style="font-family:bold; font-weight: bold; color:#586981;"> NAMASTE KAPILVASTU TOURS AND TRAVELS</p>
+                <P style="  color:gray; font-style:normal; color:#586981">Tourist Bus</P>
+                <p style="  color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif; padding-top:10px;">A/c and Fan System</p>
+                <p  style=" color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Music System</p>
+                <p  style=" color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Comfortable Seats</p>
+                <p  style=" color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Mobile Charger</p>
+                <p  style=" color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Cold Drink</p>
+            </div>
+
+        </div>
+        <div class="busB">
+            <div class="busimg2"></div>
+            <div class="busdetail">
+                <p style="font-family:bold; font-weight: bold; color:#586981;"> NAMASTE SAGARMATHA YATAYAT PVT.LTD</p>
+                <P style="font-style:normal; color:#586981">Air Suspension Semi Sleeper</P>
+                <p style="   color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif; padding-top:10px;">A/c and Fan System</p>
+                <p  style="  color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Music System</p>
+                <p  style="  color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Comfortable Seats</p>
+                <p  style="  color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Mobile Charger</p>
+                <p  style="  color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Mineral Water</p>
+                <p  style="  color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Television</p>
+                <p  style="  color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Semi Sleeper</p>
+
+
+            </div>
+
+        </div>
+        <div class="busC">
+            <div class="busimg3"></div>
+            <div class="busdetail">
+                <p style="font-family:bold; font-weight: bold; color:#586981;"> OPEN VISIT NEPAL TRAVELS & TOURS</p>
+                <P style=" color:gray; font-style:normal; color:#586981">VIP Sofa Seater</P>
+                <p style=" color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif; padding-top:10px;">Transparent Roof</p>
+                <p  style="color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Air Suspension</p>
+                <p  style="color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Charging Port</p>
+                <p  style="color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Electronic Push Back Seats</p>
+                <p  style="color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Luxurious Sofa Seat</p>
+                <p  style="color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">Heater</p>
+                <p  style="color:gray; font-size:13px;font-family:Georgia, 'Times New Roman', Times, serif;">AC</p>
+
+
+            </div>
+
+        </div>
+       
+    </div>
+</div>
+
+<div class="whyus">
+   <div class="whyus_txt">
+    <b style="font-size: xx-large; padding-bottom:20px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Why Choose Sewa</b>
+    <p style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 17px;">we are the leading oldest bus company,which offers the ,most competitive prices for buses to take you from Mechi to Mahakali.Ride with us:we guuarantee you a safe and comfortable journey.
+        on all of our buses we provide you with:
+    </p>
+</div>
+
+   <div class="whyus_img">
+
+ <div class="whyus_img1">
+    <div class="">    <i class="fa fa-wifi" style="padding-left: 2rem; color:white; font-size: 2rem;"></i></div>
+   <p style="font-size: small;">Free Wifi</p>
+
+ </div>
+<div class="whyus_img2">
+    <div class="">  <i class="fa fa-plug"style='padding-left: 2rem; color:white; font-size:2rem;' ></i></div>
+    <p style="font-size: small;">Power Plugs</p>
+</div>
+<div class="whyus_img3">
+    <div class=""><i class="fa fa-desktop" style="padding-left: 2rem; color:white; font-size:2rem;"></i>  </div>
+    <p style="font-size: small; padding-left: 2rem;">OnCoach Cinema</p>
+</div>
+
+<div class="whyus_img4">
+    <div class=""><i class="fa fa-snowflake-o" style="padding-left:2rem; font-size: 2rem; color:white"></i>  </div>
+    <p style="font-size: small; padding-left:4px;">Air <br>
+      Conditioning</p>
+</div>
+<div class="whyus_img5">
+    <div class=""><i class="fa fa-venus-mars" style="padding-left:2rem; font-size: 2rem; color:white"></i>  </div>
+    <p style="font-size: small; padding-left:2px;">Restrooms</p>
+</div>
+</div>
+   </div>
+</div>
+
+    <div class="footer">
+        <div class="topfooter">
+           <div class="topfooterA">
+            <div class="" style="padding-bottom:19px;"><b >Top Routes</b></div>
+              <div class="" style="display:flex;flex-direction:column">
+                <P>Kathmandu-Pokhara</P>
+                <P>Pokhara-Kathmandu</P>
+                <P>Kathmandu-Nepalgunj</P>
+
+
+
+              </div>
+           </div> 
+           <div class="topfooterB">
+            <div class="" style="padding-bottom:19px;"><b><i class="fa fa-bus" ></i>
+            </b></div>
+              <div class="" style="display:flex;flex-direction:column">
+                <P>Kathmandu-Manakamana</P>
+                <P>Bhairahawa-Kathmandu</P>
+                <P>Kathmandu-Kakadvitta</P>
+              </div>
+           </div>
+           <div class="topfooterC">
+            <div class="" style="padding-bottom:19px;"><b>Top Operators</b></div>
+            <div class="" style="display:flex;flex-direction:column">
+              <P>Sajha Yatayat</P>
+              <P>Dhaulagiri Yatayat</P>
+              <P>Suva Travels</P>
+            </div>
+           </div>
+           <div class="topfooterD" >
+            <div class="" style="padding-bottom:19px;"><b><i class="fa fa-bus" ></i>
+            </b></div>
+              <div class="" >
+                <P>Manakamana Darshan</P>
+                <P>Mount Makalu Yatayat Sewa</P>
+                <P>Swayambhu Manjushree</P>
+                <p>Pokhara Jagadamba</p>
+              </div>
+           </div>
+           <div class="topfooterE" >
+            <div class="" style="padding-bottom:19px;"><b>Company</b></div>
+            <div class="" style="display:flex;flex-direction:column">
+              <P>About Us</P>
+              <P>Why Sewa?</P>
+              <P>Terms/Contions</P>
+            </div>
+           </div>
+
+        </div>
+        <div class="middlefooter" style="display: flex; flex-direction: row-reverse;">
+            <div class="payment"><p>Payment Partners</p></div>
+            <div class="esewa"></div>
+            <div class="khalti"></div>
+            <div class="phonepay"></div>
+            <div class="imepay"></div>
+        </div>
+        <div class="bottomfooter">
+            <p>Copyright © 2023 Sewa Travel And Tours. All Rights Reserved.</p>
+        </div>
+    </div>
+
+   
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</body>
+</html>
